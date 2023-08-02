@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Footer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 2000px;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: #7ef9dd;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      bottom: 0;
+    }
+
+    .main-footer {
+        background-color: black;
+        height: 200px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Test</h1>
+  </div>
+  <div class="footer">
+    <p>This is the sticky footer at the bottom of the page.</p>
+  </div>
+  <div class="main-footer">
+    <p>main footer</p>
+  </div>
+</body>
+</html>
